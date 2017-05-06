@@ -1,0 +1,433 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+progress {
+  vertical-align: baseline; }
+
+template, [hidden] {
+  display: none; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+a:active, a:hover {
+  outline-width: 0; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+button, input, select, textarea {
+  font: inherit;
+  margin: 0; }
+
+optgroup {
+  font-weight: bold; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+.carbon, body {
+  background: radial-gradient(#000000 15%, transparent 16%) 0 0, radial-gradient(#000000 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px; }
+
+.ellipsis, .match .markets .market .market-inner .market-name, .match .markets .market .market-inner .odds .odd .odd-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.hidden {
+  display: none; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg); } }
+
+.cog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  margin-left: -21px;
+  margin-top: -21px;
+  opacity: 0.8;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear; }
+
+.button {
+  color: #000000;
+  background-color: #FFC812;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 0;
+  border-radius: 5px; }
+
+.button:hover {
+  background-color: #E5B410; }
+
+.on {
+  background: #7FBD2C; }
+
+.button.on:hover {
+  background-color: #72AA27; }
+
+.asc i,
+.desc i {
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/caret.png) no-repeat center;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.asc i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
+
+* {
+  outline: 0; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: #FFFFFF; }
+
+#main {
+  min-width: 1336px;
+  width: calc(100% - 30px);
+  margin: 15px auto; }
+
+.main-header {
+  height: 52px;
+  background: #404040;
+  border-bottom: 1px solid #E5B410;
+  border-top: 1px solid #E5B410;
+  border-radius: 5px 5px 0 0; }
+  .main-header .main-header-outer {
+    padding: 10px; }
+    .main-header .main-header-outer .main-header-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      float: right; }
+      .main-header .main-header-outer .main-header-inner .search-group #search {
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle; }
+      .main-header .main-header-outer .main-header-inner .search-group #search-button {
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        margin-left: -4px; }
+      .main-header .main-header-outer .main-header-inner #sort-by-market-name-button {
+        margin-left: 10px; }
+      .main-header .main-header-outer .main-header-inner #sort-by-odds-button {
+        margin-left: 10px; }
+
+.country-header {
+  padding: 0px 10px;
+  margin-bottom: 1px;
+  font-size: 22px;
+  line-height: 42px;
+  background: #393939;
+  color: #FFC812; }
+
+.tournament-header {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #404040;
+  margin-bottom: 1px; }
+  .tournament-header .tournament-tab {
+    float: left;
+    width: 300px;
+    background: #FFC812;
+    color: #000000;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+    .tournament-header .tournament-tab .tournament-name {
+      float: left;
+      font-size: 16px; }
+    .tournament-header .tournament-tab .icon-caret {
+      float: left;
+      width: 16px;
+      height: 30px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background: url(../img/caret.png) no-repeat center;
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+    .tournament-header .tournament-tab .icon-ball {
+      float: left;
+      width: 16px;
+      height: 30px;
+      margin-right: 5px;
+      background: url(../img/ball.png) no-repeat center; }
+    .tournament-header .tournament-tab .number-of-matches-container {
+      float: right;
+      width: 20px;
+      height: 16px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      margin-right: 20px;
+      background: #000000;
+      border-radius: 8px; }
+      .tournament-header .tournament-tab .number-of-matches-container .number-of-matches {
+        line-height: 16px;
+        text-align: center;
+        font-weight: 700;
+        color: #FFFFFF; }
+  .tournament-header .triangle-topleft {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 30px solid #FFC812;
+    border-right: 30px solid transparent;
+    transition: all 0.3s linear; }
+
+.tournament-header.active .tournament-tab {
+  width: 100%; }
+  .tournament-header.active .tournament-tab .icon-caret {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+
+.tournament-header.active .triangle-topleft {
+  border-right: 0px solid transparent; }
+
+.match {
+  border-bottom: 1px solid #A2A2A2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #404040; }
+  .match .match-info, .match .market {
+    height: 95px; }
+  .match .match-info {
+    width: 15%;
+    border-right: 1px solid #A2A2A2; }
+    .match .match-info .match-name {
+      margin-top: 10px;
+      padding: 5px 15px;
+      font-size: 14px; }
+    .match .match-info .match-kickoff {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: calc(100% - 20px);
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px;
+      box-sizing: border-box;
+      color: #FFC812; }
+  .match .markets {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .match .markets .market .market-outer {
+      padding: 0 5px;
+      margin-top: 10px;
+      text-align: center; }
+    .match .markets .market ~ .market .market-outer {
+      border-left: 1px solid #A2A2A2; }
+    .match .markets .market .market-inner .market-name {
+      background: #FFB200;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #000000; }
+    .match .markets .market .market-inner .odds {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .match .markets .market .market-inner .odds .odd {
+        margin: 0px 2px; }
+        .match .markets .market .market-inner .odds .odd .odd-name {
+          line-height: 16px; }
+        .match .markets .market .market-inner .odds .odd .odd-value {
+          padding: 5px 0;
+          border-radius: 5px;
+          background: #000000;
+          border: 1px solid #FFBF43; }
+
+.no-results {
+  height: 52px;
+  line-height: 52px;
+  background: #404040;
+  font-size: 14px;
+  padding-left: 10px; }
