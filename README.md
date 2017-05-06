@@ -1,1 +1,1 @@
-:dollar: # Betting
+# :dollar: Betting
