@@ -1,0 +1,103 @@
+<script  type="text/template">
+	<% var marketDevider = 0; %>
+	<% if(countries.length > 0) { %>
+		<% countries.forEach( function(country, index) { %>
+	        <% (country.tournaments).forEach( function(tournament, index) { %>
+		        <% (tournament.match).forEach(function (match, index) { %>
+	        		<% if(match.markets.length > marketDevider) { %>
+	        			<% marketDevider = match.markets.length %>
+	        		<% } %>
+	        	<% }); %>
+	        <% }); %>
+		<% }); %>
+	<% } %>
+	<% if(countries.length > 0) { %>
+		<% countries.forEach( function(country, index) { %>
+	        <div class="country">
+	            <div class="country-header">
+	                <%= country.name %>
+	            </div>
+	            <% (country.tournaments).forEach( function(tournament, index) { %>
+		            <div class="tournament">
+		                <div class="tournament-header" data-id="<%= tournament.id %>">
+		                    <div class="tournament-tab">
+		                        <div class="icon-caret">
+		                        </div>
+		                        <div class="icon-ball">
+		                        </div>
+		                        <div class="tournament-name">
+		                            <%= tournament.name %>
+		                        </div>
+		                        <div class="number-of-matches-container">
+		                        	<div class="number-of-matches">
+		                        		<%= tournament.match.length %>
+		                        	</div>
+		                        </div>
+		                    </div>
+		                    <div class="triangle-topleft">
+		                    </div>
+		                </div>
+		                <div class="matches hidden">
+		                	<% (tournament.match).forEach(function (match, index) { %>
+			                    <div class="match">
+			                        <div class="match-info">
+			                    		<div class="match-name">
+			                    			<%= match.name %>
+			                    		</div>
+			                    		<div class="match-kickoff">
+			                    			<%= match.kickoff %>
+			                    		</div>
+			                        </div>
+			                        <div class="markets">
+			                        	<% if(ascendingMarketOrder !== 'unsorted') { %>
+			                        		<% (match.markets).sort(sortBy('name', ascendingMarketOrder, function(a){return a.toUpperCase()})); %>
+			                        	<% } %>
+			                        	<% if(sortByOdds) { %>
+				                        	<% (match.markets).sort(function(a, b) { %>
+												<% (match.markets).forEach(function (market, index) { %>
+													<%  (market.odds).sort(function (x, y) { %>
+														<%  return parseFloat(y.value) - parseFloat(x.value); %>
+													<%  }); %>
+												<%  }); %>
+												<% return parseFloat(b.odds[0].value) - parseFloat(a.odds[0].value); %>
+											<% }); %>
+										<% } %>
+				                        <% (match.markets).forEach(function (market, index) { %>
+				                        	<% if((market.name).indexOf(searchTerm) >= 0) { %>
+						                        <div class="market" style="width: calc( 100% / <%= marketDevider %> )">
+						                            <div class="market-outer">
+						                                <div class="market-inner">
+						                                    <div class="market-name">
+						                                        <%= market.name %>
+						                                    </div>
+						                                    <div class="odds">
+						                                    	<% (market.odds).forEach(function (odd, index) { %>
+							                                        <div class="odd" style="width: calc( 100% / <%= market.odds.length %> )">
+							                                            <div class="odd-name">
+							                                                <%= odd.name %>
+							                                            </div>
+							                                            <div class="odd-value">
+							                                                <%= odd.value.toFixed(2) %>
+							                                            </div>
+							                                        </div>
+							                                    <% }); %>
+						                                    </div>
+						                                </div>
+						                            </div>
+						                        </div>
+					                    	<% } %>
+					                	<% }); %>
+					                </div>
+			                    </div>
+			                <% }); %>
+		                </div>
+		            </div>
+		        <% }); %>
+	        </div>
+	    <% }); %>
+	<% } else { %>
+		<div class="no-results">
+            No results
+        </div>
+	<% } %>
+</script>
