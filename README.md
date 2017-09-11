@@ -20,6 +20,6 @@ I used Gulp for running various tasks (adding css prefixes, compiling Sass, Comp
 
 I also included package.json file, so you can npm install all dependencies that are required for running Gulp tasks.
 
-You can checkout the <b>[Demo](http://betting.byethost9.com/)</b>.
+You can checkout the <b>[Demo](http://betting.byethost7.com/)</b>.
 
 Have fun! :beer:
